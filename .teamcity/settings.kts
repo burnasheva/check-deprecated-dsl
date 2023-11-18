@@ -40,6 +40,7 @@ project {
     vcsRoot(HttpsGithubComBurnashevaXunitDotnet6gitRefsHeadsMain)
 
     buildType(DuplicatesFinderAllFieldsAreEntered)
+    buildType(HelloWorldConfiguration)
     buildType(DuplicatesFinderOnlyNecessaryFieldsAreEntered)
     buildType(VisualStudionSlnOnlyRequiredFields)
     buildType(MSBuildRequiredOnlyFields)
@@ -114,6 +115,10 @@ object DuplicatesFinderOnlyNecessaryFieldsAreEntered : BuildType({
         perfmon {
         }
     }
+})
+
+object HelloWorldConfiguration : BuildType({
+    name = "hello world configuration"
 })
 
 object MSBuildAllFields : BuildType({
