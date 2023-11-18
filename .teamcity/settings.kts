@@ -49,6 +49,10 @@ project {
     buildType(VisualStudionSlnAllFields)
     buildType(VisualStudioTestsOnlyRequired)
     buildType(VisualStudioTestsAllFields)
+
+    params {
+        param("a", "b")
+    }
 }
 
 object DuplicatesFinderAllFieldsAreEntered : BuildType({
