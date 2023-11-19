@@ -161,6 +161,7 @@ object MSBuildRequiredOnlyFields : BuildType({
             version = MSBuildStep.MSBuildVersion.V15_0
             toolsVersion = MSBuildStep.MSBuildToolsVersion.V15_0
             platform = MSBuildStep.Platform.x64
+            targets = "Rebuild"
         }
     }
 })
