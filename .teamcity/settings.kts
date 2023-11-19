@@ -106,7 +106,8 @@ object DuplicatesFinderOnlyNecessaryFieldsAreEntered : BuildType({
     steps {
         reSharperDuplicates {
             name = "only required fields"
-            cltPath = "%teamcity.tool.jetbrains.resharper-clt.DEFAULT%"
+            excludeFiles = "**/*Tests.cs"
+            cltPath = "%teamcity.tool.jetbrains.resharper-clt.2021.2.1%"
         }
     }
 
