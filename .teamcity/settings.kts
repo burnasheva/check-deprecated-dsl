@@ -64,7 +64,7 @@ object DuplicatesFinderAllFieldsAreEntered : BuildType({
 
     steps {
         reSharperDuplicates {
-            name = "only required fields"
+            name = "only required fields (rename)"
             excludeFiles = "**/*.txt"
             cltPath = "%teamcity.tool.jetbrains.resharper-clt.bundled%"
             cltPlatform = ReSharperDuplicates.Platform.CROSS_PLATFORM
